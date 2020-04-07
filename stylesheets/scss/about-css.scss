@@ -1,0 +1,62 @@
+$navbar-bg: rgb(56, 56, 78);
+$footer-bg: rgb(66, 66, 88);
+$primary-color: rgb(208, 226, 255);
+$primary-color-dark: rgb(50, 50, 50);
+$fancy-color: #4ca;
+
+main.about-container {
+  padding-top: 50vh;
+  background: url("../images/girl-865304.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .about-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    border-radius: 1.5rem 1.5rem 0px 0px;
+    .about-title {
+      // background-color: black;
+      border-bottom: solid 3px orangered;
+      margin-bottom: 1rem;
+      max-width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      h1 {
+        font-size: 2.5rem;
+        color: orangered;
+        padding: 0.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+        padding: 0.5rem;
+        color: #333;
+      }
+    }
+    .about-description {
+      display: block;
+      width: 70%;
+      @media screen and (max-width: 1024px) {
+        width: 80%;
+      }
+      @media screen and (max-width: 800px) {
+        width: 90%;
+      }
+      @media screen and (max-width: 600px) {
+        width: 95%;
+      }
+      margin-left: auto;
+      margin-right: auto;
+      p {
+        color: #333;
+        padding: 0.5rem;
+        padding-bottom: 2rem;
+        span {
+          color: lighten($color: rgb(104, 28, 0), $amount: 30);
+        }
+      }
+    }
+  }
+}

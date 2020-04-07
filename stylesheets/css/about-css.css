@@ -1,0 +1,76 @@
+main.about-container {
+  padding-top: 50vh;
+  background: url("../images/girl-865304.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main.about-container .about-wrapper {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #d0e2ff;
+  border-radius: 1.5rem 1.5rem 0px 0px;
+}
+
+main.about-container .about-wrapper .about-title {
+  border-bottom: solid 3px orangered;
+  margin-bottom: 1rem;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.about-container .about-wrapper .about-title h1 {
+  font-size: 2.5rem;
+  color: orangered;
+  padding: 0.5rem;
+}
+
+main.about-container .about-wrapper .about-title h2 {
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: #333;
+}
+
+main.about-container .about-wrapper .about-description {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  main.about-container .about-wrapper .about-description {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main.about-container .about-wrapper .about-description {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main.about-container .about-wrapper .about-description {
+    width: 95%;
+  }
+}
+
+main.about-container .about-wrapper .about-description p {
+  color: #333;
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+main.about-container .about-wrapper .about-description p span {
+  color: #ff4602;
+}
+/*# sourceMappingURL=about-css.css.map */

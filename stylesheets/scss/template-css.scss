@@ -1,0 +1,66 @@
+body {
+  main.product-container {
+    padding-top: 60vh;
+    background: url("../images/coffee-171653_1920.jpg"); //nackground will be same
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    .product-wrapper {
+      background-color: aliceblue;
+      // max-width: 1400px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      // align-items: flex-start;
+      @media screen and (max-width: 800px) {
+        display: block;
+        //   width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      padding: 1rem;
+      padding-top: 2rem;
+      border-radius: 1.5rem 1.5rem 0px 0px;
+      .img-container {
+        //   img {
+        //     height: 10rem;
+        //     width: 10rem;
+        //   }
+        background: url("../images/chicorybg.jpeg"); //this changes in every object
+        background-size: cover;
+        background-position: center;
+        //   padding: 5rem;
+        height: 20rem;
+        width: 20rem;
+        margin-top: 1rem;
+        //   margin-top: auto;
+        border-radius: 50%;
+        @media screen and (max-width: 800px) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        //   flex-basis: 1;
+      }
+      .item-details {
+        width: 60%;
+        @media screen and (max-width: 800px) {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .title-wrapper {
+          font-size: 2rem;
+          h1 {
+            width: fit-content;
+            border-bottom: 3px solid orangered;
+          }
+        }
+        .details-wrapper {
+          padding-top: 1.5rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

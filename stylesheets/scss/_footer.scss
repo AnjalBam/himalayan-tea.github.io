@@ -1,0 +1,77 @@
+footer {
+  background-color: $footer-bg;
+  padding: 1rem;
+  .footer-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 800px) {
+      display: block;
+      text-align: center;
+    }
+    .logo-address-container {
+      padding: 0.5rem;
+      font-size: 1rem;
+      padding-right: 2rem;
+      .footer-title a {
+        //   font: 1rem sans-serif;
+        padding-top: 1rem;
+        &:hover {
+          color: $fancy-color;
+        }
+      }
+      .footer-address {
+        font-size: 1rem;
+        color: #f7f7f7;
+        h4 strong {
+          color: $fancy-color;
+        }
+      }
+    }
+    .social-media-links {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0.5rem;
+      border-left: $fancy-color 2px solid;
+      border-right: $fancy-color 2px solid;
+      @media screen and (max-width: 800px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      a {
+        display: block;
+        padding: 0.5rem;
+        &:hover {
+          color: $fancy-color;
+        }
+      }
+    }
+    .footer-links {
+      display: flex;
+      @media screen and (max-width: 800px) {
+        align-items: center;
+        justify-content: center;
+      }
+      padding: 1rem;
+      div {
+        display: flex;
+        flex-direction: column;
+        .nav-btn-footer {
+          padding: 0.5rem;
+          text-align: left;
+          font-weight: 500;
+          &:hover {
+            color: $fancy-color;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: right;
+    font-size: 13px;
+    color: white;
+    padding: 0.5rem;
+  }
+}

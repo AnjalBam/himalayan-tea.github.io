@@ -1,0 +1,44 @@
+main {
+  &.delivery-main-wrapper {
+    padding-top: 50vh;
+    background: url("../images/sunset-3753738.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    .delivery-container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      background-color: $primary-color;
+      border-radius: 1.5rem 1.5rem 0px 0px;
+
+      .delivery-title {
+        border-bottom: solid 3px orangered;
+        margin-bottom: 1rem;
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        h1 {
+          font-size: 2.5rem;
+          color: orangered;
+          padding: 0.5rem;
+        }
+        h2 {
+          font-size: 2rem;
+          padding: 0.5rem;
+          color: #333;
+        }
+      }
+      .delivery-description {
+        display: block;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        color: #333;
+        // color: white;
+        padding: 0.5rem;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+$navbar-bg: rgb(56, 56, 78);
+$footer-bg: rgb(66, 66, 88);
+$primary-color: rgb(208, 226, 255);
+$primary-color-dark: rgb(50, 50, 50);
+$fancy-color: #4ca;
+
+@mixin transition-ease-in-out {
+  transition: ease-in-out 0.3s;
+}
+span.title {
+  color: rgb(255, 78, 8);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+  @include transition-ease-in-out();
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: block;
+}
+
+::selection {
+  color: $fancy-color;
+  // color: orange;
+  background-color: rgba(51, 51, 51, 0.602);
+  border-radius: 1rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  @import "./header";
+  @import "./main-section";
+  @import "./tea-coffee-chicory-css";
+  @import "./delivery-about-contact";
+  @import "./footer";
+}
+
+@keyframes animate-bg {
+  0% {
+    background-position: 50%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 50%;
+  }
+}
